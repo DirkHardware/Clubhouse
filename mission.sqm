@@ -8,11 +8,11 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=300;
+		nextID=301;
 	};
 	class MarkerIDProvider
 	{
-		nextID=4;
+		nextID=5;
 	};
 	class Camera
 	{
@@ -3531,31 +3531,13 @@ class Mission
 		};
 		class Item202
 		{
-			dataType="Trigger";
-			position[]={9365.7793,186.76553,8586.1982};
-			class Attributes
-			{
-				name="base";
-				condition="call{this}";
-				onActivation="call{hint ""Here they come!"";" \n "something = execVM ""patrolSpawn.sqf"";}";
-				sizeA=150;
-				sizeB=150;
-				repeatable=1;
-				activationBy="ANYPLAYER";
-				isRectangle=1;
-			};
-			id=292;
-			type="EmptyDetectorAreaR250";
-		};
-		class Item203
-		{
 			dataType="Marker";
 			position[]={9338.9404,175.78766,8496.957};
 			name="patrol_spawn";
 			type="Empty";
 			id=294;
 		};
-		class Item204
+		class Item203
 		{
 			dataType="Group";
 			side="West";
@@ -3648,7 +3630,7 @@ class Mission
 			id=295;
 			atlOffset=1.5258789e-005;
 		};
-		class Item205
+		class Item204
 		{
 			dataType="Marker";
 			position[]={9338.8506,174.554,8487.9346};
@@ -3656,6 +3638,15 @@ class Mission
 			type="Empty";
 			id=298;
 			atlOffset=4.5776367e-005;
+		};
+		class Item205
+		{
+			dataType="Marker";
+			position[]={9366.6191,186.15601,8583.0098};
+			name="base_trigger_marker";
+			type="Empty";
+			id=300;
+			atlOffset=-0.00019836426;
 		};
 	};
 };
